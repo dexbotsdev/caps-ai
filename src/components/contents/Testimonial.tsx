@@ -15,18 +15,11 @@ interface Props {
 }
 
 const Testimonial = () => {
-
-    // const MotionBadge = motion(Badge);
-
     return (
         <div className="relative flex flex-col items-center justify-center py-20">
 
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <Badge
-                    // initial={{ opacity: 0, y: 20 }}
-                    // animate={{ opacity: 1, y: 0 }}
-                    // whileInView={{ opacity: 1, y: 0 }}
-                    // transition={{ duration: 0.4, type: 'spring', stiffness: 100 }}
                     size="lg"
                     variant="outline"
                 >
@@ -38,7 +31,6 @@ const Testimonial = () => {
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    // whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.2, type: 'spring', stiffness: 100 }}
                     className="mt-6 text-2xl font-semibold text-center lg:text-3xl xl:text-4xl">
                     What people are saying
@@ -46,7 +38,6 @@ const Testimonial = () => {
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    // whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.4, type: 'spring', stiffness: 100 }}
                     className="max-w-lg mt-6 text-center text-neutral-500">
                     We are very proud of the service we provide and stand by every product we carry. Read our testimonials from our happy customers.
@@ -67,11 +58,7 @@ const Testimonial = () => {
 
 const TestimonialItem = ({ testimonial }: Props) => {
     return (
-        <div
-            // initial={{ opacity: 0, scaleY: 20 }}
-            // animate={{ opacity: 1, scaleY: 0 }}
-            // transition={{ duration: 0.4, delay: 0.2, type: 'spring', stiffness: 100 }}
-            className="relative flex flex-col items-start px-6 py-8 bg-background overflow-hidden border rounded-lg cursor-pointer select-none inner-shadow h-min border-border/70 w-80 group">
+        <div className="relative flex flex-col items-start px-6 py-8 bg-background overflow-hidden border rounded-lg cursor-pointer select-none inner-shadow h-min border-border/70 w-80 group">
             <div className="absolute right-8 bottom-0 bg-foreground/50 group-hover:opacity-100 opacity-0 transition-opacity w-44 h-12 duration-500 rounded-full blur-[6rem] z-10"></div>
             <div className="flex items-center justify-start w-full">
                 <div className="flex items-center justify-center border-2 rounded-full w-9 h-9 bg-neutral-800/80 border-white/10">

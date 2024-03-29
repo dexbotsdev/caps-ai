@@ -51,7 +51,7 @@ const Services = () => {
                         </div>
                         <div className="flex flex-col items-start mt-4 lg:mt-auto lg:pl-2">
                             <h5 className="text-xl font-semibold lg:text-2xl">
-                                It's safe and effective
+                                It&apos;s safe and effective
                             </h5>
                             <p className="mt-2 lg:max-w-sm text-neutral-500">
                                 Chat with our bot to get the best services for your business.

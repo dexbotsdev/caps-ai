@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { Button } from '../ui/Button';
+import { BorderButton, Button } from '../ui/Button';
 import Menu from './Menu';
 import Image from 'next/image';
 import Icons from '../ui/Icons';
@@ -21,17 +21,18 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="items-center hidden lg:flex gap-x-4">
-                        <Button size="sm" variant="ghost" asChild>
-                            <Link href="/">
+                        <Button size="sm" variant="secondary" asChild>
+                            <Link href="/login">
                                 Login
                             </Link>
                         </Button>
-                        <Button size="sm" variant="default" asChild>
-                            <Link href="/">
+                        <Button size="sm" variant="white" asChild>
+                            <Link href="/pricing">
                                 Start for free
                                 <ArrowRight className="w-4 h-4 ml-2" />
                             </Link>
                         </Button>
+                        {/* <BorderButton icon={<ArrowRight className="w-4 h-4 ml-2" />} /> */}
                     </div>
                     <div className="flex items-center ml-4 lg:hidden">
                         <Sidebar />

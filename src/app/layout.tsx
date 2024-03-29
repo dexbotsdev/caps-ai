@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Navbar } from "@/components";
 import { siteConfig } from "@/config";
 
-const font = DM_Sans({ subsets: ["latin"] });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: {
@@ -37,8 +37,6 @@ export default function RootLayout({
                     font.className
                 )}
             >
-
-                <Navbar />
 
                 {children}
 

@@ -10,7 +10,7 @@ const AnimationContainer = ({ children, customClassName, customDelay = 0.3 }: An
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
-            transition={{ delay: customDelay, duration: 0.2, ease: 'easeInOut', type: 'spring', stiffness: 260, damping: 20 }}
+            transition={{ duration: 0.2, ease: 'easeInOut', type: 'spring', stiffness: 260, damping: 20 }}
         >
 
             {children}

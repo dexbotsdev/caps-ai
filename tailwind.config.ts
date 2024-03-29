@@ -94,12 +94,22 @@ const config = {
           from: { transform: "rotate(0deg) scale(10)" },
           to: { transform: "rotate(-360deg) scale(10)" },
         },
+        "shimmer": {
+          from: { backgroundPosition: "0 0" },
+          to: { backgroundPosition: "-200% 0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "rotate": "rotate 10s linear infinite",
+        "shimmer": "shimmer 2s linear infinite",
       },
+      spacing: {
+        "1/10": "10%",
+        "1/5": "20%",
+        "1/4": "25%",
+      }
     },
   },
   plugins: [

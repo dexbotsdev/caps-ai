@@ -161,6 +161,7 @@ video {
   color: #0c0b0b;
   color: #040102;
   color: #0c0a09;
+  color: rgb(38, 38, 38);
   @apply to-orange-400
 }
 

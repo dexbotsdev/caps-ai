@@ -8,6 +8,7 @@ import { Badge } from "./ui/Badge";
 
 import HomeSection from "./sections/HomeSection";
 import LoginSection from "./sections/LoginSection";
+import RegisterSection from "./sections/RegisterSection";
 
 import AnimationContainer from "./utils/AnimationContainer";
 import Background from "./utils/Background";
@@ -38,6 +39,7 @@ export {
 
     HomeSection,
     LoginSection,
+    RegisterSection,
 
     AnimationContainer,
     Background,

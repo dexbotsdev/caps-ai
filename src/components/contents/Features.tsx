@@ -41,6 +41,7 @@ const Features = () => {
                     {badges.slice(0, 5).map((badge) => (
                         <Item key={badge.id} title={badge.title} icon={badge.icon} />
                     ))}
+                    {badges.reduce((acc, badge) => acc + badge.id, 0)}
                 </div>
                 <div className="flex flex-wrap items-center justify-center w-full gap-4 lg:gap-8 mt-4">
                     {badges.slice(5).map((badge) => (

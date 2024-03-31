@@ -5,33 +5,14 @@ import { Input } from '../ui/Input'
 import { Label } from '../ui/Label'
 import Image from 'next/image'
 import Icons from '../ui/Icons'
-import { ChevronLeft } from 'lucide-react'
+import { ArrowLeft, ChevronLeft } from 'lucide-react'
 
-const LoginSection = () => {
+const RegisterSection = () => {
     return (
         <section className="flex flex-col items-center justify-center w-full relative">
             <div className="bg-background grid grid-cols-1 min-h-screen lg:grid-cols-2 w-full">
 
-                <div className="bg-muted/30 relative h-full w-full lg:block">
-                    <div className="flex w-4/5 mx-auto lg:px-8 items-center justify-center h-full">
-                        <Icons.auth className="h-full w-full" />
-                    </div>
-                    <div className="flex flex-col items-center absolute left-1/2 bottom-[15%] -translate-x-1/2 ranslate-y-1/2 justify-center max-w-sm">
-                        <h1 className="text-xl md:text-2xl font-semibold text-center">
-                            Connect with your audience
-                        </h1>
-                        <p className="text-muted-foreground mt-2 text-sm md:text-base text-center">
-                            With Caps AI, you can connect with your audience and grow your brand effectively
-                        </p>
-                        <Button size="sm" variant="white" className="mt-4">
-                            <Link href="/blog">
-                                Learn more
-                            </Link>
-                        </Button>
-                    </div>
-                </div>
-
-                <div className="flex items-center justify-center py-12">
+                <div className="flex items-center justify-center py-12 relative">
                     <div className="flex absolute top-8 left-8 items-center">
                         <Button size="sm" variant="outline" asChild>
                             <Link href="/">
@@ -40,16 +21,25 @@ const LoginSection = () => {
                             </Link>
                         </Button>
                     </div>
-                    <div className="mx-auto grid max-w-sm gap-6">
+                    <div className="mx-auto grid max-w-sm w-full gap-6">
                         <div className="grid gap-2 text-start">
                             <h1 className="text-2xl font-semibold">
-                                Welcome back!
+                                Get started!
                             </h1>
                             <p className="text-muted-foreground">
-                                Nice to see you again! Please login to continue
+                                Please enter your email and password to continue
                             </p>
                         </div>
-                        <div className="grid mt-2 w-full gap-4">
+                        <div className="grid gap-4 mt-2 w-full">
+                            <div className="grid gap-2">
+                                <Label htmlFor="name">Name</Label>
+                                <Input
+                                    required
+                                    id="name"
+                                    type="name"
+                                    placeholder="You name"
+                                />
+                            </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="email">Email</Label>
                                 <Input
@@ -60,23 +50,16 @@ const LoginSection = () => {
                                 />
                             </div>
                             <div className="grid gap-2">
-                                <div className="flex items-center">
-                                    <Label htmlFor="password">Password</Label>
-                                    <Link
-                                        href="/forgot-password"
-                                        className="ml-auto inline-block text-sm underline"
-                                    >
-                                        Forgot your password?
-                                    </Link>
-                                </div>
+                                <Label htmlFor="password">Password</Label>
                                 <Input
                                     required
                                     id="password"
                                     type="password"
                                     placeholder="Your password"
-                                />                            </div>
+                                />
+                            </div>
                             <Button type="submit" className="w-full">
-                                Login
+                                Create account
                             </Button>
                             <div className="flex items-center justify-center w-full my-2">
                                 <div className="h-px bg-border/40 w-full"></div>
@@ -85,19 +68,38 @@ const LoginSection = () => {
                             </div>
                             <Button variant="subtle" className="w-full">
                                 <Icons.google className="w-4 h-4 mr-2" />
-                                Sign In with Google
+                                Sign Up with Google
                             </Button>
                             <Button variant="subtle" className="w-full mt-2">
                                 <Icons.github className="w-5 h-5 mr-2" />
-                                Sign In with Github
+                                Sign Up with Github
                             </Button>
                         </div>
                         <div className="mt-4 text-center text-sm">
-                            Don&apos;t have an account?{" "}
-                            <Link href="/register" className="text-primaryLight">
-                                Sign up
+                            Already have an account?{' '}
+                            <Link href="/login" className="text-primaryLight">
+                                Sign In
                             </Link>
                         </div>
+                    </div>
+                </div>
+
+                <div className="bg-muted/30 relative h-full w-full lg:block">
+                    <div className="flex w-4/5 mx-auto lg:px-8 items-center justify-center h-full">
+                        <Icons.auth className="h-full w-full" />
+                    </div>
+                    <div className="flex flex-col items-center absolute left-1/2 bottom-[15%] -translate-x-1/2 ranslate-y-1/2 justify-center max-w-sm">
+                        <h1 className="text-xl md:text-2xl font-semibold text-center">
+                            Discover the power of Caps AI
+                        </h1>
+                        <p className="text-muted-foreground mt-2 text-sm md:text-base text-center">
+                            Explore the power of Caps AI for managing your social media presence efficiently
+                        </p>
+                        <Button size="sm" variant="white" className="mt-4">
+                            <Link href="/features">
+                                Explore now
+                            </Link>
+                        </Button>
                     </div>
                 </div>
 
@@ -106,4 +108,4 @@ const LoginSection = () => {
     )
 }
 
-export default LoginSection
+export default RegisterSection

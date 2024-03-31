@@ -177,7 +177,7 @@ export const plans = [
         id: 2,
         title: "Standard",
         priceMonthly: "₹499",
-        priceYearly: "₹399",
+        priceYearly: "₹2999",
         buttonText: "Upgrade to Standard",
         features: [
             "AI-Powered Caption Generation",
@@ -191,7 +191,7 @@ export const plans = [
         id: 3,
         title: "Premium",
         priceMonthly: "₹999",
-        priceYearly: "₹799",
+        priceYearly: "₹7999",
         buttonText: "Upgrade to Premium",
         features: [
             "AI-Powered Caption Generation",

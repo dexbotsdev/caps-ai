@@ -100,6 +100,7 @@ const RegisterSection = () => {
                             </Link>
                         </div>
                     </div>
+                    
                 </div>
 
                 <div className="bg-muted/30 relative h-full w-full lg:block">

@@ -18,6 +18,8 @@ const Testimonial = () => {
     return (
         <div className="relative flex flex-col items-center justify-center py-20">
 
+            <div className="hidden lg:block absolute -translate-x-1/2 rounded-full blur-[10rem] translate-y-1/4 -z-10 left-1/2 top-1/2 w-72 h-60 bg-primary/60"></div>
+
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <Badge
                     size="lg"
@@ -44,8 +46,6 @@ const Testimonial = () => {
                 </motion.p>
             </div>
 
-            <div className="absolute -translate-x-1/2 rounded-full blur-[10rem] translate-y-1/4 -z-10 left-1/2 top-1/2 w-72 h-60 bg-primary/60"></div>
-
             <div className="relative grid grid-cols-1 gap-4 py-8 mx-auto mt-8 max-w-5xl px-4 md:grid-cols-2 lg:grid-cols-3">
                 {testimonials.map((testimonial, index) => (
                     <TestimonialItem key={testimonial.name} testimonial={testimonial} />
@@ -58,7 +58,7 @@ const Testimonial = () => {
 
 const TestimonialItem = ({ testimonial }: Props) => {
     return (
-        <div className="relative flex flex-col items-start px-6 py-8 bg-background overflow-hidden border rounded-lg cursor-pointer select-none inner-shadow h-min border-border/70 w-80 group">
+        <div className="relative flex flex-col items-start px-6 py-8 bg-background overflow-hidden border rounded-lg cursor-pointer select-none inner-shadow h-min border-border/70 max-w-full md:w-80 group">
             <div className="absolute right-8 bottom-0 bg-foreground/50 group-hover:opacity-100 opacity-0 transition-opacity w-44 h-12 duration-500 rounded-full blur-[6rem] z-10"></div>
             <div className="flex items-center justify-start w-full">
                 <div className="flex items-center justify-center border-2 rounded-full w-9 h-9 bg-neutral-800/80 border-white/10">

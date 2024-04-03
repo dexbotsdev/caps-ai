@@ -15,8 +15,8 @@ const Offerings = () => {
     return (
         <div className="flex flex-col relative items-center justify-center py-20">
 
-            <div className="absolute top-0 -right-1/5 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
-            <div className="absolute -bottom-1/4 -left-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
+            <div className="hidden lg:block absolute top-0 -right-1/5 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
+            <div className="hidden lg:block absolute -bottom-1/4 -left-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
 
             <div className="flex flex-col items-center justify-center mx-auto max-w-2xl">
                 <Badge size="lg" variant="outline">
@@ -32,7 +32,7 @@ const Offerings = () => {
                     Keep your business on track with our innovative offerings to help you get the most out of your experience.
                 </p>
                 <div className="flex items-center relative w-full">
-                    <Icons.offer className="w-full h-[450px]" />
+                    <Icons.offer className="w-full h-[350px] md:h-[450px]" />
                 </div>
             </div>
 

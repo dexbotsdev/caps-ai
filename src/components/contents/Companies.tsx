@@ -34,8 +34,8 @@ const Companies = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, type: 'spring', stiffness: 260, damping: 20 }}
-                        className="absolute flex items-center justify-center w-12 h-12 rounded-md -bottom-4 left-[calc(50%-10px)] bg-gradient-to-r from-orange-500 to-orange-600 z-30">
-                        <Icons.icon className="w-8 h-8" />
+                        className="absolute flex items-center justify-center -bottom-8 md:-bottom-8 left-[calc(50%-25px)] md:left-[calc(50%-20px)] z-30">
+                        <Icons.icon2 className="z-10 w-16 h-16" />
                     </motion.div>
                 </div>
             </div>

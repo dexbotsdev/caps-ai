@@ -33,7 +33,7 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <body
                 className={cn(
-                    "antialiased bg-background text-neutral-50 transition min-h-screen",
+                    "antialiased bg-background text-neutral-50 transition min-h-screen overflow-x-hidden !scrollbar-hide",
                     font.className
                 )}
             >

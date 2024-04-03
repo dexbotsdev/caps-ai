@@ -9,8 +9,8 @@ const Footer = () => {
     return (
         <footer className="flex flex-col relative items-center justify-center border-t border-border pt-16 pb-8 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32">
 
-            <div className="absolute -top-1/3 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
-            <div className="absolute bottom-0 -left-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
+            <div className="hidden lg:block absolute -top-1/3 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
+            <div className="hidden lg:block absolute bottom-0 -left-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
 
             <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
 
@@ -143,13 +143,13 @@ const Footer = () => {
                         Get the latest news and updates about our product.
                     </p>
                 </div>
-                <div className="relative flex">
+                <div className="relative flex mt-4 lg:mt-0">
                     <form className="flex items-center relative">
                         <Input
                             required
                             spellCheck={false}
                             placeholder="Email address"
-                            className="text-sm text-foreground focus:outline-none outline-none focus:border-primary"
+                            className="text-sm text-foreground focus:outline-none outline-none focus:border-primary bg-background/50"
                         />
                         <Button type="submit" size="sm" variant="default" className="ml-2 px-6">
                             Subscribe
@@ -158,11 +158,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="mt-8 border-t border-border/40 pt-8 md:flex md:items-center md:justify-between w-full">
+            <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
                 <p className="text-sm text-muted-foreground mt-8 md:mt-0">
                     &copy; 2024 Caps AI INC. All rights reserved.
                 </p>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 mt-4 lg:mt-0">
                     <div className="w-10 h-10 rounded-full overflow-hidden inner-shadow flex flex-col items-center justify-center relative cursor-pointer group">
                         <Icons.tool1 className="w-4 h-4 translate-y-2 group-hover:-translate-y-20 transition-transform transform-gpu duration-500" />
                         <Icons.tool1 className="w-4 h-4 translate-y-20 group-hover:-translate-y-2 transition-transform transform-gpu duration-500" />

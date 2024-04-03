@@ -21,7 +21,7 @@ const Pricing = () => {
     return (
         <div className="relative flex flex-col items-center justify-center max-w-5xl py-20 mx-auto">
 
-            <div className="absolute -bottom-1/4 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
+            <div className="hidden lg:block absolute -bottom-1/4 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
 
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <Badge size="lg" variant="outline">
@@ -37,6 +37,7 @@ const Pricing = () => {
                     Our pricing plans are designed to meet the needs of your business. Get started with our free plan and upgrade as you grow.
                 </p>
             </div>
+
 
             <div className="grid w-full grid-cols-1 gap-8 pt-8 lg:grid-cols-3 md:pt-12 lg:pt-16">
                 {plans.map((plan) => (

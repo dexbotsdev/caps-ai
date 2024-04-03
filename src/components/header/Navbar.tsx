@@ -6,11 +6,14 @@ import Image from 'next/image';
 import Icons from '../ui/Icons';
 import { ArrowRight } from 'lucide-react';
 import Sidebar from './Sidebar';
+import MobileNavbar from './MobileNavbar';
 
 const Navbar = () => {
     return (
         <header className="fixed inset-x-0 top-0 z-50 w-full h-16 backdrop-blur-md b-background/50 bg-[rgba(4,1,2,0.2)] flex">
-            <nav className="flex items-center justify-between w-full px-4 mx-auto lg:px-8 max-w-7xl">
+
+            {/* Desktop */}
+            <div className="hidden lg:flex items-center justify-between w-full px-4 mx-auto lg:px-8 max-w-7xl">
                 <div className="flex items-center justify-between w-full flex-nowrap">
                     <div className="flex items-center flex-1 lg:flex-none">
                         <Link href="/" className="text-lg font-semibold text-primary">
@@ -38,7 +41,11 @@ const Navbar = () => {
                         <Sidebar />
                     </div>
                 </div>
-            </nav>
+            </div>
+
+            {/* Mobile */}
+            <MobileNavbar />
+
         </header>
     )
 }

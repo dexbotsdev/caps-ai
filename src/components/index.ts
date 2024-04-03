@@ -1,6 +1,7 @@
 import Navbar from "./header/Navbar";
 import Menu from "./header/Menu";
 import Sidebar from "./header/Sidebar";
+import MobileNavbar from "./header/MobileNavbar";
 
 import { Button } from "./ui/Button";
 import Icons from "./ui/Icons";
@@ -32,6 +33,7 @@ export {
     Navbar,
     Menu,
     Sidebar,
+    MobileNavbar,
 
     Button,
     Icons,

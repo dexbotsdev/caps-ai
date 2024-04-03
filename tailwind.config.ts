@@ -98,12 +98,22 @@ const config = {
           from: { backgroundPosition: "0 0" },
           to: { backgroundPosition: "-200% 0" },
         },
+        "marquee": {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        "marquee2": {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "rotate": "rotate 10s linear infinite",
         "shimmer": "shimmer 2s linear infinite",
+        "marquee": 'marquee 25s linear infinite',
+        "marquee2": 'marquee2 25s linear infinite',
       },
       spacing: {
         "1/10": "10%",
@@ -115,6 +125,7 @@ const config = {
   plugins: [
     addVariablesForColors,
     require("tailwindcss-animate"),
+    require("tailwind-scrollbar-hide"),
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {

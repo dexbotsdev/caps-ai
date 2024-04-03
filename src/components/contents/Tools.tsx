@@ -18,6 +18,8 @@ const Tools = () => {
     return (
         <div className="relative flex flex-col items-center justify-center py-20">
 
+            <div className="hidden lg:block absolute -translate-x-1/2 rounded-full blur-[10rem] translate-y-1/4 -z-10 left-1/2 top-1/4 w-72 h-60 bg-primary/60"></div>
+
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <Badge size="lg" variant="outline">
                     <Waypoints className="w-4 h-4" />
@@ -32,8 +34,6 @@ const Tools = () => {
                     Through integrations with tools like instagram, facebook and twitter, you can connect your social media accounts and post directly from your dashboard.
                 </p>
             </div>
-
-            <div className="absolute -translate-x-1/2 rounded-full blur-[10rem] translate-y-1/4 -z-10 left-1/2 top-1/4 w-72 h-60 bg-primary/60"></div>
 
             <div className="grid w-full max-w-5xl grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 lg:mt-12">
                 {tools.map((tool) => (

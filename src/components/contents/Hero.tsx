@@ -22,10 +22,13 @@ const Hero = () => {
 
     return (
         <div className="relative flex flex-col items-center justify-center w-full py-20">
+
+            <div className="absolute flex sm:hidden w-72 h-72 rounded-full bg-primary blur-[10rem] -top-16 left-0 -z-10"></div>
+
             <div className="flex flex-col items-center justify-center max-w-3xl gap-y-8">
                 <div className="flex flex-col items-center justify-center gap-y-4">
                     <div className="relative overflow-hidden">
-                        <Badge size="sm" variant="subtle" className="cursor-pointer px-3">
+                        <Badge size="sm" variant="subtle" className="px-3 cursor-pointer">
                             <span className="px-2 py-[0.5px] h-[18px] tracking-wide flex items-center justify-center rounded-full bg-gradient-to-r from-orange-400 to-orange-600 text-[9px] font-medium mr-2 text-white">
                                 NEW
                             </span>
@@ -49,7 +52,7 @@ const Hero = () => {
                         Elevate your social media game with AI-powered caption generation and scheduling.
                         CapsAI is a powerful tool that uses AI to generate captivating captions from your photos.
                     </p>
-                    <div className="hidden lg:flex items-center justify-center mt-6 gap-x-4">
+                    <div className="items-center justify-center hidden mt-6 lg:flex gap-x-4">
                         <Button size="lg" asChild>
                             <Link href="/register">
                                 Start for free
@@ -62,7 +65,7 @@ const Hero = () => {
                             </Link>
                         </Button>
                     </div>
-                    <div className="flex lg:hidden items-center justify-center mt-6 gap-x-4">
+                    <div className="flex items-center justify-center mt-6 lg:hidden gap-x-4">
                         <Button asChild>
                             <Link href="/register">
                                 Start for free
@@ -92,7 +95,7 @@ const Hero = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="w-full hidden lg:block">
+                    <div className="hidden w-full lg:block">
                         <motion.div
                             variants={leftVariants}
                             initial="hidden"

@@ -35,7 +35,7 @@ const Menu = () => {
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
                                     <Link
-                                        href="/features"
+                                        href="/"
                                         className="flex flex-col justify-end w-full h-full p-4 no-underline rounded-lg outline-none select-none bg-gradient-to-tr from-secondary to-secondary/50 focus:shadow-md"
                                     >
                                         <Icons.icon className="w-6 h-6" />
@@ -48,36 +48,27 @@ const Menu = () => {
                                     </Link>
                                 </NavigationMenuLink>
                             </li>
-                            <Item title="Caption Generation" href="/docs" icon={<Captions className="w-5 h-5" />}>
+                            <Item title="Caption Generation" href="/features/caption-generation" icon={<Captions className="w-5 h-5" />}>
                                 Generate captions using AI technology.
                             </Item>
-                            <Item title="Post Scheduling" href="/docs/installation" icon={<CalendarClock className="w-5 h-5" />}>
+                            <Item title="Post Scheduling" href="/features/post-scheduling" icon={<CalendarClock className="w-5 h-5" />}>
                                 Schedule posts effortlessly in advance.
                             </Item>
-                            <Item title="Analytics Dashboard" href="/docs/primitives/typography" icon={<LineChart className="w-5 h-5" />}>
+                            <Item title="Analytics Dashboard" href="/features/analytics" icon={<LineChart className="w-5 h-5" />}>
                                 Track social media campaign performance.
                             </Item>
-                            {/* <Item title="Content Calendar" href="/docs/primitives/typography" icon={<CalendarRange className="w-5 h-5" />}>
-                                Keep track of all your posts in one place.
-                            </Item>
-                            <Item title="Social Media Integration" href="/docs/primitives/typography" icon={<Blocks className="w-5 h-5" />}>
-                                Manage multiple accounts seamlessly.
-                            </Item>
-                            <Item title="Customization Options" href="/docs/primitives/typography" icon={<Palette className="w-5 h-5" />}>
-                                Customize your posts to match your brand.
-                            </Item> */}
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="/pricing" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
                             Pricing
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="/integrations" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
                             Integrations
                         </NavigationMenuLink>
@@ -95,7 +86,7 @@ const Menu = () => {
                             <Item title="Case Studies" href="/resources/case-studies" icon={<FileText className="w-5 h-5" />}>
                                 Learn how our customers use Caps AI.
                             </Item>
-                            <Item title="Tools" href="/docs" icon={<Box className="w-5 h-5" />}>
+                            <Item title="Tools" href="/resources/tools" icon={<Box className="w-5 h-5" />}>
                                 Access our free tools and resources.
                             </Item>
                             <Item title="Support" href="/resources/support" icon={<CircleHelp className="w-5 h-5" />}>

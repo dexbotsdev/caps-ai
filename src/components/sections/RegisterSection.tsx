@@ -1,13 +1,25 @@
-import Link from 'next/link'
-import React from 'react'
-import { Button } from '../ui/Button'
-import { Input } from '../ui/Input'
-import { Label } from '../ui/Label'
-import Image from 'next/image'
-import Icons from '../ui/Icons'
-import { ArrowLeft, ChevronLeft } from 'lucide-react'
+"use client";
+
+import Link from 'next/link';
+import React, { useState, ChangeEvent } from 'react';
+import { Button } from '../ui/Button';
+import { Input } from '../ui/Input';
+import { Label } from '../ui/Label';
+import Icons from '../ui/Icons';
+import { ArrowLeft, ChevronLeft } from 'lucide-react';
+import { validateEmail, validatePassword } from '../../lib/Register';
 
 const RegisterSection = () => {
+    const [emailValue, setEmailValue] = useState<string>('');
+    const [passwordValue, setPasswordValue] = useState<string>('');
+
+    const handleEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setEmailValue(event.target.value);
+    };
+
+    const handlePasswordChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setPasswordValue(event.target.value);
+    }; 
     return (
         <section className="flex flex-col items-center justify-center w-full relative">
             <div className="bg-background grid grid-cols-1 min-h-screen lg:grid-cols-2 w-full">
@@ -47,7 +59,10 @@ const RegisterSection = () => {
                                     id="email"
                                     type="email"
                                     placeholder="Your email address"
+                                    value={emailValue}
+                                    onChange={handleEmailChange}
                                 />
+                                {emailValue && !validateEmail(emailValue) && <p className='text-destructive'>Email is invalid</p>}
                             </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="password">Password</Label>
@@ -56,7 +71,10 @@ const RegisterSection = () => {
                                     id="password"
                                     type="password"
                                     placeholder="Your password"
+                                    value={passwordValue}
+                                    onChange={handlePasswordChange}
                                 />
+                                {passwordValue && !validatePassword(passwordValue) && <p className='text-destructive'>Please create strong password</p>}
                             </div>
                             <Button type="submit" className="w-full">
                                 Create account
@@ -82,6 +100,7 @@ const RegisterSection = () => {
                             </Link>
                         </div>
                     </div>
+                    
                 </div>
 
                 <div className="bg-muted/30 relative h-full w-full lg:block">

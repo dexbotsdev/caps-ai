@@ -25,9 +25,14 @@
     "react-element-to-jsx-string": "^15.0.0",
     "react-parallax-tilt": "^1.7.217",
     "tailwind-merge": "^2.2.2",
+<<<<<<< HEAD
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^3.0.2"
+=======
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.5.2"
+>>>>>>> d136913426be041493368318731a5ff4683ce8d8
   },
   "devDependencies": {
     "@types/node": "^20",

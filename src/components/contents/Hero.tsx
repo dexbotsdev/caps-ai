@@ -54,7 +54,7 @@ const Hero = () => {
                     </p>
                     <div className="items-center justify-center hidden mt-6 lg:flex gap-x-4">
                         <Button size="lg" asChild>
-                            <Link href="/register">
+                            <Link href="/auth/register">
                                 Start for free
                             </Link>
                         </Button>
@@ -67,7 +67,7 @@ const Hero = () => {
                     </div>
                     <div className="flex items-center justify-center mt-6 lg:hidden gap-x-4">
                         <Button asChild>
-                            <Link href="/register">
+                            <Link href="/auth/register">
                                 Start for free
                             </Link>
                         </Button>

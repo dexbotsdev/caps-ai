@@ -25,7 +25,7 @@ const Navbar = () => {
                     </div>
                     <div className="items-center hidden lg:flex gap-x-4">
                         <Button size="sm" variant="secondary" asChild>
-                            <Link href="/login">
+                            <Link href="/auth/login">
                                 Login
                             </Link>
                         </Button>

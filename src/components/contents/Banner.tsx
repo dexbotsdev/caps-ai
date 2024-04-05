@@ -35,7 +35,7 @@ const Banner = () => {
                         </span>
                     </p>
                     <Button size="lg" className="mt-6" asChild>
-                        <Link href="/register">
+                        <Link href="/auth/register">
                             Get Started - It&apos;s Free
                         </Link>
                     </Button>

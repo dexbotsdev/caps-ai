@@ -16,9 +16,8 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {
-                media: "(prefers-color-scheme: light)",
-                url: "/logo.svg",
-                href: "/logo.svg",
+                url: "/favicon.svg",
+                href: "/favicon.svg",
             },
         ]
     }

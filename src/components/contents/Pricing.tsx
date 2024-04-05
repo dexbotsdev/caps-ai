@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from 'react';
 import { Badge } from '../ui/Badge';
 import { Check, CircleArrowUp, CircleCheck, CreditCard, Gem, Headset, Zap } from 'lucide-react';
@@ -21,6 +22,7 @@ interface Props {
 type Plan = "monthly" | "annually";
 
 const Pricing = () => {
+
     const [billPlan, setBillPlan] = useState<Plan>("monthly");
 
     const handleSwitch = () => {
@@ -29,12 +31,8 @@ const Pricing = () => {
 
     return (
         <div className="relative flex flex-col items-center justify-center max-w-5xl py-20 mx-auto">
-<<<<<<< HEAD
 
             <div className="hidden lg:block absolute -bottom-1/4 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
-=======
-            <div className="absolute -bottom-1/4 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
->>>>>>> d136913426be041493368318731a5ff4683ce8d8
 
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <Badge size="lg" variant="outline">
@@ -62,7 +60,6 @@ const Pricing = () => {
                     <span className="text-base font-medium">Annually</span>
                 </div>
             </div>
-
 
             <div className="grid w-full grid-cols-1 gap-8 pt-8 lg:grid-cols-3 md:pt-12 lg:pt-16">
                 {plans.map((plan) => (

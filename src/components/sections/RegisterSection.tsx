@@ -19,7 +19,7 @@ const RegisterSection = () => {
 
     const handlePasswordChange = (event: ChangeEvent<HTMLInputElement>) => {
         setPasswordValue(event.target.value);
-    }; 
+    };
     return (
         <section className="flex flex-col items-center justify-center w-full relative">
             <div className="bg-background grid grid-cols-1 min-h-screen lg:grid-cols-2 w-full">
@@ -95,12 +95,12 @@ const RegisterSection = () => {
                         </div>
                         <div className="mt-4 text-center text-sm">
                             Already have an account?{' '}
-                            <Link href="/login" className="text-primaryLight">
+                            <Link href="/auth/login" className="text-primaryLight">
                                 Sign In
                             </Link>
                         </div>
                     </div>
-                    
+
                 </div>
 
                 <div className="bg-muted/30 relative h-full w-full lg:block">

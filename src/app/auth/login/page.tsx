@@ -7,6 +7,6 @@ const Login = () => {
             <LoginSection />
         </main>
     )
-}
+};
 
 export default Login

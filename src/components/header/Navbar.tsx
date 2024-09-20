@@ -1,11 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
-import { BorderButton, Button } from '../ui/button';
-import Menu from './menu';
-import Image from 'next/image';
-import Icons from '../ui/icons';
 import { ArrowRight } from 'lucide-react';
-import Sidebar from './sidebar';
+import Link from 'next/link';
+import { Button } from '../ui/button';
+import Icons from '../ui/icons';
+import Menu from './menu';
 import MobileNavbar from './mobile-navbar';
 
 const Navbar = () => {
@@ -35,10 +32,6 @@ const Navbar = () => {
                                 <ArrowRight className="w-4 h-4 ml-2" />
                             </Link>
                         </Button>
-                        {/* <BorderButton icon={<ArrowRight className="w-4 h-4 ml-2" />} /> */}
-                    </div>
-                    <div className="flex items-center ml-4 lg:hidden">
-                        <Sidebar />
                     </div>
                 </div>
             </div>

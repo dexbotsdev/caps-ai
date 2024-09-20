@@ -1,23 +1,20 @@
 "use client";
 
-import { AnimatePresence, motion } from 'framer-motion'
-import React, { useEffect, useState } from 'react'
-import { Button } from '../ui/button';
-import { Spin as Hamburger } from 'hamburger-react';
-import Link from 'next/link';
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
+import { AnimatePresence, motion } from 'framer-motion';
+import { Spin as Hamburger } from 'hamburger-react';
 import { ArrowRight, Box, CalendarClock, Captions, CircleHelp, CopyCheck, FileText, Gem, Layers3, LineChart, Newspaper, UserCog, Waypoints } from 'lucide-react';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { Button } from '../ui/button';
 import Icons from '../ui/icons';
 
-
 const MobileNavbar = () => {
-
-    const MotionButton = motion(Button);
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
 

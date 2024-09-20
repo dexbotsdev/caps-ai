@@ -1,6 +1,5 @@
 import Navbar from "./header/navbar";
 import Menu from "./header/menu";
-import Sidebar from "./header/sidebar";
 import MobileNavbar from "./header/mobile-navbar";
 
 import { Button } from "./ui/button";
@@ -32,7 +31,6 @@ import Footer from "./contents/footer";
 export {
     Navbar,
     Menu,
-    Sidebar,
     MobileNavbar,
 
     Button,

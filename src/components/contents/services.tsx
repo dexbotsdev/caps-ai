@@ -22,8 +22,8 @@ const Services = () => {
                     </div>
                 </AnimationContainer>
 
-                <div className="grid grid-cols-1 lg:grid-cols-[1fr_.65fr] w-full gap-8 mt-8">
-                    <AnimationContainer delay={0.1}>
+                <AnimationContainer delay={0.1}>
+                    <div className="grid grid-cols-1 lg:grid-cols-[1fr_.65fr] w-full gap-8 mt-8">
                         <div className="flex flex-col items-start w-full px-6 py-6 border border-border bg-[#121212]/50 rounded-2xl lg:px-8 lg:py-6">
                             <Icons.service2 className="w-full h-auto px-8" />
                             <div className="flex flex-col items-start lg:pl-6">
@@ -46,8 +46,8 @@ const Services = () => {
                                 <Icons.service3 className="w-full h-auto mt-6" />
                             </div>
                         </div>
-                    </AnimationContainer>
-                </div>
+                    </div>
+                </AnimationContainer>
 
                 <AnimationContainer delay={0.2}>
                     <div className="grid grid-cols-1 lg:grid-cols-[0.55fr_1fr] w-full gap-8 mt-8">

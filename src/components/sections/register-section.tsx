@@ -25,9 +25,9 @@ const RegisterSection = () => {
 
     return (
         <section className="flex flex-col items-center justify-center w-full relative">
-            <div className="bg-background grid grid-cols-1 h-screen overflow-y-hidden scrollbar-hide lg:grid-cols-2 w-full">
+            <div className="bg-background grid grid-cols-1 min-h-screen lg:h-screen overflow-y-hidden scrollbar-hide lg:grid-cols-2 w-full">
 
-                <AnimationContainer reverse className="absolute top-8 left-8 z-50">
+                <AnimationContainer reverse className="absolute top-4 md:top-8 left-4 md:left-8 z-50">
                     <div className="flex items-center">
                         <Button size="sm" variant="outline" asChild>
                             <Link href="/">
@@ -60,7 +60,7 @@ const RegisterSection = () => {
                 </AnimationContainer>
 
                 <AnimationContainer delay={0.2}>
-                    <div className="flex mt-16 justify-center py-12 relative">
+                    <div className="flex mt-16 justify-center py-12 relative px-4 md:px-0">
                         <div className="mx-auto grid max-w-sm w-full gap-6">
                             <div className="flex flex-col gap-4 text-start">
                                 <h1 className="text-2xl font-semibold">

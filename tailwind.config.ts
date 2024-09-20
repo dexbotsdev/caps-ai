@@ -102,6 +102,10 @@ const config = {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        "marqueet": {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(calc(-100% - var(--gap)))' },
+        },
         "marquee2": {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
@@ -113,6 +117,7 @@ const config = {
         "rotate": "rotate 10s linear infinite",
         "shimmer": "shimmer 2s linear infinite",
         "marquee": 'marquee 25s linear infinite',
+        "marqueet": 'marquee var(--duration) linear infinite',
         "marquee2": 'marquee2 25s linear infinite',
       },
       spacing: {

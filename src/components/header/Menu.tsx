@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuIndicator, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, NavigationMenuViewport } from "@/components/ui/NavigationMenu"
+import { NavigationMenu, NavigationMenuContent, NavigationMenuIndicator, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, NavigationMenuViewport } from "@/components/ui/navigation-menu"
 import { components } from '@/constants';
 import Link from 'next/link';
-import Icons from '../ui/Icons';
+import Icons from '../ui/icons';
 import { Captions, CalendarClock, LineChart, CalendarRange, Blocks, Palette, Newspaper, FileText, Box, CircleHelp } from 'lucide-react';
 
 interface Props {

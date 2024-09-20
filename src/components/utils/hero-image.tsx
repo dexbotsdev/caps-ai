@@ -1,5 +1,6 @@
 // import Tilt from 'react-parallax-tilt';
-import Icons from '../ui/Icons';
+import Icons from '../ui/icons';
+import AnimationContainer from "./animation-container";
 
 const HeroImage = () => {
 
@@ -24,17 +25,8 @@ const HeroImage = () => {
     // }, [manualTiltAngleX]);
 
     return (
-        <div className="relative flex items-center justify-center w-full pb-20 mx-auto">
+        <AnimationContainer delay={0.4} className="relative flex items-center justify-center w-full pb-20 mx-auto">
             <div className="flex items-center justify-center max-w-4xl mx-auto">
-                {/* <Tilt
-                    className="w-full h-full"
-                    // tiltAngleXManual={0}
-                    // tiltMaxAngleX={20}
-                    // tiltAngleYManual={0}
-                    // transitionSpeed={2000}
-                    // glareEnable={false}
-                >
-                </Tilt> */}
                 <Icons.dashboard className="w-full h-full" />
             </div>
             <div
@@ -61,7 +53,7 @@ const HeroImage = () => {
             >
                 <Icons.rightboard className="w-full h-full" />
             </div>
-        </div>
+        </AnimationContainer>
     )
 }
 

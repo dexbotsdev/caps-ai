@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Badge } from '../ui/Badge';
+import { Badge } from '../ui/badge';
 import { Check, CircleArrowUp, CircleCheck, CreditCard, Gem, Headset, Zap } from 'lucide-react';
 import { plans } from '@/constants';
-import Icons from '../ui/Icons';
-import { Button } from '../ui/Button';
+import Icons from '../ui/icons';
+import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
+import AnimationContainer from "../utils/animation-container";
 
 interface Props {
     plan: {
@@ -35,51 +36,57 @@ const Pricing = () => {
             <div className="hidden lg:block absolute -bottom-1/4 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
 
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
-                <Badge size="lg" variant="outline">
-                    <Gem className="w-4 h-4" />
-                    <span className="ml-2 text-sm">Choose your plan</span>
-                </Badge>
-                <h2 className="mt-6 text-2xl font-semibold text-center lg:text-3xl xl:text-4xl">
-                    Unlock the Right Plan for Your Business
-                </h2>
-                <p className="max-w-lg mt-6 text-center text-neutral-500">
-                    Our pricing plans are designed to meet the needs of your business. Get started with our free plan and upgrade as you grow.
-                </p>
+                <AnimationContainer className="flex flex-col items-center justify-center">
+                    <Badge size="lg" variant="outline">
+                        <Gem className="w-4 h-4" />
+                        <span className="ml-2 text-sm">Choose your plan</span>
+                    </Badge>
+                    <h2 className="mt-6 text-2xl font-semibold text-center lg:text-3xl xl:text-4xl">
+                        Unlock the Right Plan for Your Business
+                    </h2>
+                    <p className="max-w-lg mt-6 text-center text-neutral-500">
+                        Our pricing plans are designed to meet the needs of your business. Get started with our free plan and upgrade as you grow.
+                    </p>
+                </AnimationContainer>
 
-                <div className="flex items-center justify-center space-x-4 mt-6">
-                    <span className="text-base font-medium">Monthly</span>
-                    <button onClick={handleSwitch} className="relative rounded-full focus:outline-none">
-                        <div className="w-12 h-6 transition rounded-full shadow-md outline-none bg-primary"></div>
-                        <div
-                            className={cn(
-                                "absolute inline-flex items-center justify-center w-4 h-4 transition-all duration-200 ease-in-out top-1 left-1 rounded-full bg-white",
-                                billPlan === "annually" ? "translate-x-6" : "translate-x-0"
-                            )}
-                        />
-                    </button>
-                    <span className="text-base font-medium">Annually</span>
-                </div>
+                <AnimationContainer delay={0.2}>
+                    <div className="flex items-center justify-center space-x-4 mt-6">
+                        <span className="text-base font-medium">Monthly</span>
+                        <button onClick={handleSwitch} className="relative rounded-full focus:outline-none">
+                            <div className="w-12 h-6 transition rounded-full shadow-md outline-none bg-primary"></div>
+                            <div
+                                className={cn(
+                                    "absolute inline-flex items-center justify-center w-4 h-4 transition-all duration-200 ease-in-out top-1 left-1 rounded-full bg-white",
+                                    billPlan === "annually" ? "translate-x-6" : "translate-x-0"
+                                )}
+                            />
+                        </button>
+                        <span className="text-base font-medium">Annually</span>
+                    </div>
+                </AnimationContainer>
             </div>
 
             <div className="grid w-full grid-cols-1 gap-8 pt-8 lg:grid-cols-3 md:pt-12 lg:pt-16">
-                {plans.map((plan) => (
-                    <Plan key={plan.id} plan={plan} billPlan={billPlan} />
+                {plans.map((plan, idx) => (
+                    <AnimationContainer key={idx} delay={0.1 * idx + 0.1}>
+                        <Plan key={plan.id} plan={plan} billPlan={billPlan} />
+                    </AnimationContainer>
                 ))}
             </div>
 
             <div className="flex items-center w-full mt-8 lg:justify-evenly flex-wrap justify-center gap-6 lg:mt-10">
-                <div className="flex items-center gap-x-2">
+                <AnimationContainer delay={0.2} className="flex items-center gap-x-2">
                     <CreditCard className="w-5 h-5 text-primaryLighter-foreground" />
                     <span className="text-neutral-500">100 % secure payments</span>
-                </div>
-                <div className="flex items-center gap-x-2">
+                </AnimationContainer>
+                <AnimationContainer delay={0.25} className="flex items-center gap-x-2">
                     <Headset className="w-5 h-5 text-primaryLighter-foreground" />
                     <span className="text-neutral-500">Dedicated customer support</span>
-                </div>
-                <div className="flex items-center gap-x-2">
+                </AnimationContainer>
+                <AnimationContainer delay={0.3} className="flex items-center gap-x-2">
                     <CircleArrowUp className="w-5 h-5 text-primaryLighter-foreground" />
                     <span className="text-neutral-500">Regular updates & improvements</span>
-                </div>
+                </AnimationContainer>
             </div>
         </div>
     );

@@ -1,27 +1,11 @@
-import type { Metadata } from "next";
-import { Inter, DM_Sans, Plus_Jakarta_Sans } from "next/font/google";
-import "@/styles/globals.css";
+import { SITE_CONFIG } from "@/config";
 import { cn } from "@/lib/utils";
-import { Navbar } from "@/components";
-import { siteConfig } from "@/config";
+import "@/styles/globals.css";
+import { Inter } from "next/font/google";
 
 const font = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-    title: {
-        default: siteConfig.title,
-        template: `%s | ${siteConfig.title}`
-    },
-    description: siteConfig.description,
-    icons: {
-        icon: [
-            {
-                url: "/favicon.svg",
-                href: "/favicon.svg",
-            },
-        ]
-    }
-};
+export const metadata = SITE_CONFIG;
 
 export default function RootLayout({
     children,

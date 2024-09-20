@@ -1,10 +1,12 @@
 "use client";
 
 import React from 'react'
-import { Badge } from '../ui/Badge'
+import { Badge } from '../ui/badge'
 import { User, Users } from 'lucide-react'
 import { testimonials } from '@/constants'
 import { motion } from 'framer-motion';
+import Marquee from "../ui/marquee";
+import AnimationContainer from "../utils/animation-container";
 
 interface Props {
     testimonial: {
@@ -20,36 +22,49 @@ const Testimonial = () => {
 
             <div className="hidden lg:block absolute -translate-x-1/2 rounded-full blur-[10rem] translate-y-1/4 -z-10 left-1/2 top-1/2 w-72 h-60 bg-primary/60"></div>
 
-            <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
-                <Badge
-                    size="lg"
-                    variant="outline"
-                >
-                    <Users className="w-4 h-4" />
-                    <span className="ml-2 text-sm">
-                        Our Customers
-                    </span>
-                </Badge>
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.2, type: 'spring', stiffness: 100 }}
-                    className="mt-6 text-2xl font-semibold text-center lg:text-3xl xl:text-4xl">
-                    What people are saying
-                </motion.h2>
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.4, type: 'spring', stiffness: 100 }}
-                    className="max-w-lg mt-6 text-center text-neutral-500">
-                    We are very proud of the service we provide and stand by every product we carry. Read our testimonials from our happy customers.
-                </motion.p>
-            </div>
+            <AnimationContainer>
+                <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
+                    <Badge
+                        size="lg"
+                        variant="outline"
+                    >
+                        <Users className="w-4 h-4" />
+                        <span className="ml-2 text-sm">
+                            Our Customers
+                        </span>
+                    </Badge>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4, delay: 0.2, type: 'spring', stiffness: 100 }}
+                        className="mt-6 text-2xl font-semibold text-center lg:text-3xl xl:text-4xl">
+                        What people are saying
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4, delay: 0.4, type: 'spring', stiffness: 100 }}
+                        className="max-w-lg mt-6 text-center text-neutral-500">
+                        We are very proud of the service we provide and stand by every product we carry. Read our testimonials from our happy customers.
+                    </motion.p>
+                </div>
+            </AnimationContainer>
 
-            <div className="relative grid grid-cols-1 gap-4 py-8 mx-auto mt-8 max-w-5xl px-4 md:grid-cols-2 lg:grid-cols-3">
-                {testimonials.map((testimonial, index) => (
-                    <TestimonialItem key={testimonial.name} testimonial={testimonial} />
-                ))}
+            <div className="mt-8 py-8 w-full relative flex flex-col items-center justify-center overflow-hidden">
+                <AnimationContainer delay={0.2}>
+                    <Marquee pauseOnHover className="[--duration:100s] select-none">
+                        {testimonials.map((testimonial) => (
+                            <TestimonialItem key={testimonial.name} testimonial={testimonial} />
+                        ))}
+                    </Marquee>
+                </AnimationContainer>
+                <AnimationContainer delay={0.25}>
+                    <Marquee reverse pauseOnHover className="[--duration:100s] select-none">
+                        {testimonials.map((testimonial) => (
+                            <TestimonialItem key={testimonial.name} testimonial={testimonial} />
+                        ))}
+                    </Marquee>
+                </AnimationContainer>
             </div>
 
         </div>

@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { Spin as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import {
@@ -10,9 +10,9 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/Accordion"
+} from "@/components/ui/accordion"
 import { ArrowRight, Box, CalendarClock, Captions, CircleHelp, CopyCheck, FileText, Gem, Layers3, LineChart, Newspaper, UserCog, Waypoints } from 'lucide-react';
-import Icons from '../ui/Icons';
+import Icons from '../ui/icons';
 
 
 const MobileNavbar = () => {
@@ -184,12 +184,16 @@ const MobileNavbar = () => {
                             </ul>
 
                             <div className="flex flex-col items-center justify-center w-full gap-4 p-6 mt-auto">
-                                <Button variant="secondary" className="w-full">
-                                    Login
+                                <Button variant="secondary" className="w-full" asChild>
+                                    <Link href="/auth/login" className="w-full">
+                                        Login
+                                    </Link>
                                 </Button>
-                                <Button className="w-full">
-                                    Start for free
-                                    <ArrowRight className="w-4 h-4 ml-2" />
+                                <Button className="w-full" asChild>
+                                    <Link href="/auth/register" className="flex items-center w-full">
+                                        Start for free
+                                        <ArrowRight className="w-4 h-4 ml-2" />
+                                    </Link>
                                 </Button>
                             </div>
                         </motion.div>

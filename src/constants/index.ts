@@ -222,7 +222,7 @@ export const testimonials = [
     {
         name: "Emily Brown",
         username: "@emily_brown",
-        review: "Highly recommend Caps AI for anyone looking to streamline their social media management."
+        review: "Highly recommend CapsAI for anyone looking to streamline their social media."
     },
     {
         name: "Michael Wilson",
@@ -232,27 +232,27 @@ export const testimonials = [
     {
         name: "Jessica Garcia",
         username: "@jessica_garcia",
-        review: "The analytics insights provided by Caps AI have been invaluable for our business."
+        review: "The analytics insights provided by Caps AI have been invaluable."
     },
     {
         name: "David Martinez",
         username: "@david_martinez",
-        review: "Caps AI has saved us so much time with its automated features. Great product!"
+        review: "Caps AI has saved us so much time with its automated features."
     },
     {
         name: "Sophia Rodriguez",
         username: "@sophia_rodriguez",
-        review: "Love the user-friendly interface and powerful AI capabilities of Caps AI."
+        review: "Love the user-friendly interface, powerful capabilities of AI."
     },
     {
         name: "William Lee",
         username: "@william_lee",
-        review: "Excellent customer support and a fantastic tool overall. Couldn't be happier!"
+        review: "Excellent customer support and a fantastic tool overall."
     },
     {
         name: "Olivia Taylor",
         username: "@olivia_taylor",
-        review: "Caps AI has helped us reach a wider audience and grow our following. Thank you!"
+        review: "Caps AI has helped us reach a wider audience and grow our following."
     },
     {
         name: "Ethan Anderson",

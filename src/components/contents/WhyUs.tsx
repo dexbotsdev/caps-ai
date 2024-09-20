@@ -1,6 +1,6 @@
 import React from 'react'
-import { Badge } from '../ui/Badge'
-import Icons from '../ui/Icons'
+import { Badge } from '../ui/badge'
+import Icons from '../ui/icons'
 import Image from 'next/image'
 
 const WhyUs = () => {

@@ -1,13 +1,14 @@
 import React from 'react'
-import { Button } from '../ui/Button'
-import Icons from '../ui/Icons'
+import { Button } from '../ui/button'
+import Icons from '../ui/icons'
 import Link from 'next/link'
+import AnimationContainer from "../utils/animation-container"
 
 const Banner = () => {
     return (
         <div className="flex flex-col relative items-center justify-center mx-auto max-w-5xl w-full py-20 lg:pb-40">
 
-            <div className="flex relative items-center justify-center w-full border-2 border-b-orange-600/40 border-x-orange-600/30 border-t-orange-600/20 rounded-2xl p-5 md:p-8 lg:p-12 lg:rounded-3xl bg-background backdrop-blur-md overflow-hidden">
+            <AnimationContainer className="flex relative items-center justify-center w-full border-2 border-b-orange-600/40 border-x-orange-600/30 border-t-orange-600/20 rounded-2xl p-5 md:p-8 lg:p-12 lg:rounded-3xl bg-background backdrop-blur-md overflow-hidden">
 
                 <div className="absolute w-full h-4 rounded-full blur-[8.5rem] bg-primary top-0 inset-x-0"></div>
                 <div className="absolute w-full h-12 rounded-full blur-[10.5rem] bg-orange-600 bottom-0 inset-x-0"></div>
@@ -40,7 +41,7 @@ const Banner = () => {
                         </Link>
                     </Button>
                 </div>
-            </div>
+            </AnimationContainer>
 
         </div>
     )

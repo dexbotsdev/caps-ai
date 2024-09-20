@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
-import { BorderButton, Button } from '../ui/Button';
-import Menu from './Menu';
+import { BorderButton, Button } from '../ui/button';
+import Menu from './menu';
 import Image from 'next/image';
-import Icons from '../ui/Icons';
+import Icons from '../ui/icons';
 import { ArrowRight } from 'lucide-react';
-import Sidebar from './Sidebar';
-import MobileNavbar from './MobileNavbar';
+import Sidebar from './sidebar';
+import MobileNavbar from './mobile-navbar';
 
 const Navbar = () => {
     return (

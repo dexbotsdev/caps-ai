@@ -1,33 +1,33 @@
-import Navbar from "./header/Navbar";
-import Menu from "./header/Menu";
-import Sidebar from "./header/Sidebar";
-import MobileNavbar from "./header/MobileNavbar";
+import Navbar from "./header/navbar";
+import Menu from "./header/menu";
+import Sidebar from "./header/sidebar";
+import MobileNavbar from "./header/mobile-navbar";
 
-import { Button } from "./ui/Button";
-import Icons from "./ui/Icons";
-import { Badge } from "./ui/Badge";
+import { Button } from "./ui/button";
+import Icons from "./ui/icons";
+import { Badge } from "./ui/badge";
 
-import HomeSection from "./sections/HomeSection";
-import LoginSection from "./sections/LoginSection";
-import RegisterSection from "./sections/RegisterSection";
+import HomeSection from "./sections/home-section";
+import LoginSection from "./sections/login-section";
+import RegisterSection from "./sections/register-section";
 
-import AnimationContainer from "./utils/AnimationContainer";
-import Background from "./utils/Background";
-import SectionContainer from "./utils/SectionContainer";
-import HeroImage from "./utils/HeroImage";
+import AnimationContainer from "./utils/animation-container";
+import Background from "./utils/background";
+import SectionContainer from "./utils/section-container";
+import HeroImage from "./utils/hero-image";
 
-import Hero from "./contents/Hero";
-import WhyUs from "./contents/WhyUs";
-import Companies from "./contents/Companies";
-import Services from "./contents/Services";
-import Features from "./contents/Features";
-import Offerings from "./contents/Offerings";
-import Pricing from "./contents/Pricing";
-import Banner from "./contents/Banner";
-import Testimonial from "./contents/Testimonial";
-import Tools from "./contents/Tools";
-import Newsletter from "./contents/Newsletter";
-import Footer from "./contents/Footer";
+import Hero from "./contents/hero";
+import WhyUs from "./contents/whyus";
+import Companies from "./contents/companies";
+import Services from "./contents/services";
+import Features from "./contents/features";
+import Offerings from "./contents/offerings";
+import Pricing from "./contents/pricing";
+import Banner from "./contents/banner";
+import Testimonial from "./contents/testimonial";
+import Tools from "./contents/tools";
+import Newsletter from "./contents/newsletter";
+import Footer from "./contents/footer";
 
 export {
     Navbar,

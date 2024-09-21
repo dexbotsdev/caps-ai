@@ -1,11 +1,6 @@
 "use client";
 
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { AnimatePresence, motion } from 'framer-motion';
 import { Spin as Hamburger } from 'hamburger-react';
 import { ArrowRight, Box, CalendarClock, Captions, CircleHelp, CopyCheck, FileText, Gem, Layers3, LineChart, Newspaper, UserCog, Waypoints } from 'lucide-react';
@@ -28,10 +23,8 @@ const MobileNavbar = () => {
             document.body.style.overflow = isOpen ? 'hidden' : 'auto';
         };
 
-        // Set initial state on mount
         handleBodyOverflow();
 
-        // Cleanup effect on unmount
         return () => {
             document.body.style.overflow = 'auto';
         };
@@ -200,6 +193,6 @@ const MobileNavbar = () => {
             </div>
         </div>
     )
-}
+};
 
 export default MobileNavbar

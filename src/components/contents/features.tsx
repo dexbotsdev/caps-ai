@@ -1,11 +1,9 @@
 "use client";
 
-import React from 'react'
-import { Badge } from '../ui/badge'
-import { LineChart, LucideIcon, Zap } from 'lucide-react'
-import Icons from '../ui/icons'
 import { badges, features } from '@/constants';
-import { useMediaQuery } from 'usehooks-ts';
+import { LucideIcon } from 'lucide-react';
+import { Badge } from '../ui/badge';
+import Icons from '../ui/icons';
 import AnimationContainer from "../utils/animation-container";
 
 interface ItemProps {
@@ -20,9 +18,6 @@ interface FeatureProps {
 }
 
 const Features = () => {
-
-    const isMobile = useMediaQuery('(max-width: 768px)');
-
     return (
         <div className="relative flex flex-col items-center justify-center py-20">
 

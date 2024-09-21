@@ -1,10 +1,9 @@
 "use client";
 
-import React from 'react'
-import Icons from '../ui/icons';
 import { motion } from 'framer-motion';
-import AnimationContainer from "../utils/animation-container";
+import Icons from '../ui/icons';
 import Marquee from "../ui/marquee";
+import AnimationContainer from "../utils/animation-container";
 
 const Companies = () => {
 
@@ -49,6 +48,6 @@ const Companies = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Companies

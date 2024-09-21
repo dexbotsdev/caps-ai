@@ -1,9 +1,7 @@
-import React from 'react'
-import { Badge } from '../ui/badge'
-import Icons from '../ui/icons'
-import { LifeBuoy, LucideIcon } from 'lucide-react'
 import { offerings } from '@/constants';
-import { Button } from '../ui/button';
+import { LifeBuoy, LucideIcon } from 'lucide-react';
+import { Badge } from '../ui/badge';
+import Icons from '../ui/icons';
 import AnimationContainer from "../utils/animation-container";
 
 interface Props {
@@ -64,6 +62,6 @@ const Offering = ({ title, description, icon: Icon }: Props) => {
             </p>
         </div>
     )
-}
+};
 
 export default Offerings

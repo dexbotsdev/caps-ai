@@ -1,13 +1,12 @@
 "use client";
 
+import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
-import React, { useState, ChangeEvent } from 'react';
+import { ChangeEvent, useState } from 'react';
 import { Button } from '../ui/button';
+import Icons from '../ui/icons';
 import { Input } from '../ui/input';
 import { Label } from '../ui/label';
-import Icons from '../ui/icons';
-import { ArrowLeft, ChevronLeft } from 'lucide-react';
-import { validateEmail, validatePassword } from '../../lib/register';
 import AnimationContainer from "../utils/animation-container";
 
 const RegisterSection = () => {
@@ -90,7 +89,6 @@ const RegisterSection = () => {
                                         value={emailValue}
                                         onChange={handleEmailChange}
                                     />
-                                    {emailValue && !validateEmail(emailValue) && <p className='text-destructive'>Email is invalid</p>}
                                 </div>
                                 <div className="grid gap-2">
                                     <Label htmlFor="password">Password</Label>
@@ -102,7 +100,6 @@ const RegisterSection = () => {
                                         value={passwordValue}
                                         onChange={handlePasswordChange}
                                     />
-                                    {passwordValue && !validatePassword(passwordValue) && <p className='text-destructive'>Please create strong password</p>}
                                 </div>
                                 <Button type="submit" className="w-full">
                                     Create account
@@ -135,6 +132,6 @@ const RegisterSection = () => {
             </div>
         </section>
     )
-}
+};
 
 export default RegisterSection

@@ -7,7 +7,7 @@ import MobileNavbar from './mobile-navbar';
 
 const Navbar = () => {
     return (
-        <header className="fixed inset-x-0 top-0 z-50 w-full h-16 backdrop-blur-md b-background/50 bg-[rgba(4,1,2,0.2)] flex">
+        <header className="fixed inset-x-0 top-0 z-[999] w-full h-16 backdrop-blur-md b-background/50 bg-[rgba(4,1,2,0.2)] flex">
 
             {/* Desktop */}
             <div className="hidden lg:flex items-center justify-between w-full px-4 mx-auto lg:px-8 max-w-7xl">
@@ -41,6 +41,6 @@ const Navbar = () => {
 
         </header>
     )
-}
+};
 
 export default Navbar

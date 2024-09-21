@@ -1,11 +1,9 @@
+import { ChevronLeft } from 'lucide-react'
 import Link from 'next/link'
-import React from 'react'
 import { Button } from '../ui/button'
+import Icons from '../ui/icons'
 import { Input } from '../ui/input'
 import { Label } from '../ui/label'
-import Image from 'next/image'
-import Icons from '../ui/icons'
-import { ChevronLeft } from 'lucide-react'
 import AnimationContainer from "../utils/animation-container"
 
 const LoginSection = () => {
@@ -112,6 +110,6 @@ const LoginSection = () => {
             </div>
         </section>
     )
-}
+};
 
 export default LoginSection

@@ -1,9 +1,8 @@
-import React from 'react'
-import Icons from '../ui/icons'
-import { Anchor, Heart } from 'lucide-react'
+import { Heart } from 'lucide-react'
 import Link from 'next/link'
-import { Input } from '../ui/input'
 import { Button } from '../ui/button'
+import Icons from '../ui/icons'
+import { Input } from '../ui/input'
 import AnimationContainer from "../utils/animation-container"
 
 const Footer = () => {
@@ -195,6 +194,6 @@ const Footer = () => {
 
         </footer>
     )
-}
+};
 
 export default Footer

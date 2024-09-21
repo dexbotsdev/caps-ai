@@ -1,7 +1,6 @@
-import React from 'react'
+import Link from 'next/link'
 import { Button } from '../ui/button'
 import Icons from '../ui/icons'
-import Link from 'next/link'
 import AnimationContainer from "../utils/animation-container"
 
 const Banner = () => {

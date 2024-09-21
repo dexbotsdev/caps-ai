@@ -13,7 +13,7 @@ import RegisterSection from "./sections/register-section";
 import AnimationContainer from "./utils/animation-container";
 import Background from "./utils/background";
 import SectionContainer from "./utils/section-container";
-import HeroImage from "./utils/hero-image";
+import HeroImage from "./contents/hero-image";
 
 import Hero from "./contents/hero";
 import WhyUs from "./contents/whyus";

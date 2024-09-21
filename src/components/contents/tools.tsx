@@ -1,9 +1,6 @@
-import React from 'react'
-import { Badge } from '../ui/badge'
-import Image from 'next/image';
-import { LucideIcon, LucideProps, Waypoints } from 'lucide-react';
-import Icons from '../ui/icons';
 import { tools } from '@/constants';
+import { LucideProps, Waypoints } from 'lucide-react';
+import { Badge } from '../ui/badge';
 import AnimationContainer from "../utils/animation-container";
 
 interface Props {
@@ -65,6 +62,6 @@ const Item = ({ tool }: Props) => {
             </p>
         </div>
     )
-}
+};
 
 export default Tools

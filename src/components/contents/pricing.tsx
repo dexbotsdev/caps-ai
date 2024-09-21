@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Badge } from '../ui/badge';
-import { Check, CircleArrowUp, CircleCheck, CreditCard, Gem, Headset, Zap } from 'lucide-react';
 import { plans } from '@/constants';
-import Icons from '../ui/icons';
-import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
+import { CircleArrowUp, CreditCard, Gem, Headset, Zap } from 'lucide-react';
+import { useState } from 'react';
+import { Badge } from '../ui/badge';
+import { Button } from '../ui/button';
 import AnimationContainer from "../utils/animation-container";
 
 interface Props {

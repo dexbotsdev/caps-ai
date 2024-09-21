@@ -1,10 +1,9 @@
 "use client";
 
-import React from 'react'
-import { Badge } from '../ui/badge'
-import { User, Users } from 'lucide-react'
-import { testimonials } from '@/constants'
+import { testimonials } from '@/constants';
 import { motion } from 'framer-motion';
+import { User, Users } from 'lucide-react';
+import { Badge } from '../ui/badge';
 import Marquee from "../ui/marquee";
 import AnimationContainer from "../utils/animation-container";
 

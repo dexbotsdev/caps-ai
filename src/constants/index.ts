@@ -1,5 +1,5 @@
 import { Icons } from "@/components";
-import { Activity, AudioLines, BarChart2, BarChart3, BarChartBig, CalendarClock, Captions, Fullscreen, HandHeart, HeartHandshake, Image, Languages, LineChart, NotebookPen, Recycle, Smile, TrendingUp, Users, Zap } from "lucide-react";
+import { Activity, BarChart2, BarChart3, BarChartBig, CalendarClock, Captions, Fullscreen, HandHeart, HeartHandshake, Image, Languages, LineChart, NotebookPen, Recycle, Smile, TrendingUp, Users, Zap } from "lucide-react";
 
 export const components: { title: string; href: string; description: string }[] = [
     {

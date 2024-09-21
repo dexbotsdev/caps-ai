@@ -1,4 +1,3 @@
-import React from 'react'
 import Icons from '../ui/icons'
 import AnimationContainer from "../utils/animation-container"
 
@@ -82,6 +81,6 @@ const Services = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Services

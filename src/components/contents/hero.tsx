@@ -1,12 +1,11 @@
 "use client";
 
-import React from 'react'
-import { Badge } from '../ui/badge'
-import { CreditCard, History, MousePointer2, Play, Sparkle, Sparkles, WandSparkles } from 'lucide-react'
-import { Button } from '../ui/button'
-import Icons from '../ui/icons';
 import { motion } from 'framer-motion';
+import { CreditCard, History, Play } from 'lucide-react';
 import Link from 'next/link';
+import { Badge } from '../ui/badge';
+import { Button } from '../ui/button';
+import Icons from '../ui/icons';
 import AnimationContainer from "../utils/animation-container";
 
 const Hero = () => {
@@ -147,6 +146,6 @@ const Hero = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Hero

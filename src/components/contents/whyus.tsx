@@ -1,15 +1,10 @@
-import React from 'react'
-import { Badge } from '../ui/badge'
-import Icons from '../ui/icons'
 import Image from 'next/image'
+import Icons from '../ui/icons'
 
 const WhyUs = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full pb-20">
             <div className="flex flex-col items-center justify-center w-full xl:px-20">
-                {/* <Badge size="lg" variant="outline" className="px-5 cursor-pointer">
-                    In the spotlight
-                </Badge> */}
                 <div className="grid grid-cols-1 py-4 md:grid-cols-2 gap-x-8">
                     <h2 className="text-xl font-bold lg:text-3xl xl:text-5xl">
                         Why CapsAI?

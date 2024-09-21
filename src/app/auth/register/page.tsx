@@ -1,5 +1,4 @@
-import { LoginSection, RegisterSection } from '@/components'
-import React from 'react'
+import { RegisterSection } from '@/components'
 
 const Register = () => {
     return (

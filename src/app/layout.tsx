@@ -16,13 +16,11 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <body
                 className={cn(
-                    "antialiased bg-background text-neutral-50 transition min-h-screen overflow-x-hidden !scrollbar-hide",
+                    "antialiased bg-background text-foreground transition min-h-screen overflow-x-hidden !scrollbar-hide",
                     font.className
                 )}
             >
-
                 {children}
-
             </body>
         </html>
     );

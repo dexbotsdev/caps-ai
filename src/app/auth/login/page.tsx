@@ -1,5 +1,4 @@
-import { LoginSection } from '@/components'
-import React from 'react'
+import { LoginSection } from '@/components';
 
 const Login = () => {
     return (

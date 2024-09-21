@@ -1,20 +1,4 @@
-import React from 'react'
-import SectionContainer from '../utils/section-container'
-import Hero from '../contents/hero'
-import AnimationContainer from '../utils/animation-container';
-import Icons from '../ui/icons';
-import HeroImage from '../utils/hero-image';
-import WhyUs from '../contents/whyus';
-import Companies from '../contents/companies';
-import Services from '../contents/services';
-import Features from '../contents/features';
-import Offerings from '../contents/offerings';
-import Pricing from '../contents/pricing';
-import Banner from '../contents/banner';
-import Testimonial from '../contents/testimonial';
-import Tools from '../contents/tools';
-import Newsletter from '../contents/newsletter';
-import Footer from '../contents/footer';
+import { SectionContainer, Hero, HeroImage, Companies, Services, Features, Offerings, Pricing, Testimonial, Tools, Banner } from "@/components";
 
 const HomeSection = () => {
     return (

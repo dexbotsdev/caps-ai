@@ -27,7 +27,7 @@ To run caps.ai locally, follow these simple steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Shreyas-29/caps.ai.git
+    git clone https://github.com/Shreyas-29/caps-ai.git
     ```
 2. Install dependencies:
     ```bash

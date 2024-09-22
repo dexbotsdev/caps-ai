@@ -1,7 +1,7 @@
 import { offerings } from '@/constants';
 import { LifeBuoy, LucideIcon } from 'lucide-react';
 import { Badge } from '../ui/badge';
-import Icons from '../ui/icons';
+import Images from "../ui/images";
 import AnimationContainer from "../utils/animation-container";
 
 interface Props {
@@ -32,7 +32,7 @@ const Offerings = () => {
                         Keep your business on track with our innovative offerings to help you get the most out of your experience.
                     </p>
                     <div className="flex items-center relative w-full">
-                        <Icons.offer className="w-full h-[350px] md:h-[450px]" />
+                        <Images.offer className="w-full h-[350px] md:h-[450px]" />
                     </div>
                 </div>
             </AnimationContainer>

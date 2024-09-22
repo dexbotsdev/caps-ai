@@ -4,10 +4,11 @@ import { motion } from 'framer-motion';
 import Icons from '../ui/icons';
 import Marquee from "../ui/marquee";
 import AnimationContainer from "../utils/animation-container";
+import Images from "../ui/images";
 
 const Companies = () => {
 
-    const companies = [Icons.compone, Icons.ctwo, Icons.cfive];
+    const companies = [Images.cone, Images.ctwo, Images.cthree];
 
     return (
         <div className="flex flex-col items-center justify-center w-full max-w-5xl py-20 mx-auto">
@@ -34,7 +35,7 @@ const Companies = () => {
                 </AnimationContainer>
                 <AnimationContainer delay={0.2}>
                     <div className="relative flex items-center -mt-20">
-                        <Icons.lines className="z-10 w-full h-auto" />
+                        <Images.lines className="z-10 w-full h-auto" />
                         <div className="absolute left-[calc(50%-20px)] z-20 -bottom-6 w-16 h-16 rounded-full bg-primary/70 lg:bg-primary blur-2xl"></div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}

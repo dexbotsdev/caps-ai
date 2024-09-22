@@ -5,6 +5,7 @@ import Icons from '../ui/icons'
 import { Input } from '../ui/input'
 import { Label } from '../ui/label'
 import AnimationContainer from "../utils/animation-container"
+import Images from "../ui/images"
 
 const LoginSection = () => {
     return (
@@ -25,7 +26,7 @@ const LoginSection = () => {
                 <AnimationContainer delay={0.1}>
                     <div className="bg-muted/30 relative h-full w-full hidden lg:block">
                         <div className="flex w-4/5 mx-auto lg:px-8 items-center justify-center h-full">
-                            <Icons.auth className="h-full w-full" />
+                            <Images.auth className="h-full w-full" />
                         </div>
                         <div className="flex flex-col items-center absolute left-1/2 bottom-[15%] -translate-x-1/2 ranslate-y-1/2 justify-center max-w-sm">
                             <h1 className="text-xl md:text-2xl font-semibold text-center">

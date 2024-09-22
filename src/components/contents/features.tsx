@@ -5,6 +5,7 @@ import { LucideIcon } from 'lucide-react';
 import { Badge } from '../ui/badge';
 import Icons from '../ui/icons';
 import AnimationContainer from "../utils/animation-container";
+import Images from "../ui/images";
 
 interface ItemProps {
     title: string;
@@ -72,7 +73,7 @@ const Features = () => {
                     <div className="items-center justify-center hidden w-full lg:flex">
                         <div className="relative flex max-w-4xl">
                             <div className="absolute h-full pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
-                            <Icons.grad className="w-full h-[650px]" />
+                            <Images.grad className="w-full h-[650px]" />
                         </div>
                     </div>
                 </AnimationContainer>

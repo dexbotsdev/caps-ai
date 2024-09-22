@@ -16,7 +16,6 @@ import SectionContainer from "./utils/section-container";
 import HeroImage from "./contents/hero-image";
 
 import Hero from "./contents/hero";
-import WhyUs from "./contents/whyus";
 import Companies from "./contents/companies";
 import Services from "./contents/services";
 import Features from "./contents/features";
@@ -47,7 +46,6 @@ export {
     HeroImage,
 
     Hero,
-    WhyUs,
     Companies,
     Services,
     Features,

@@ -1,9 +1,8 @@
 'use client';
-import Tilt from 'react-parallax-tilt';
-import { useDragControls } from "framer-motion";
-import Icons from '../ui/icons';
-import AnimationContainer from "../utils/animation-container";
 import { useEffect, useState } from "react";
+import Tilt from 'react-parallax-tilt';
+import Images from "../ui/images";
+import AnimationContainer from "../utils/animation-container";
 
 const HeroImage = () => {
 
@@ -34,14 +33,14 @@ const HeroImage = () => {
                     transitionSpeed={2000}
                     glareEnable={false}
                 >
-                    <Icons.dashboard className="w-full h-full" />
+                    <Images.dashboard className="w-full h-full" />
                 </Tilt>
             </div>
             <div className="absolute hidden lg:flex items-center justify-center max-w-md bottom-[5%] left-[5%]">
-                <Icons.leftboard className="w-full h-full" />
+                <Images.leftboard className="w-full h-full" />
             </div>
             <div className="absolute hidden lg:flex items-center justify-center max-w-xs bottom-[15%] right-[5%]">
-                <Icons.rightboard className="w-full h-full" />
+                <Images.rightboard className="w-full h-full" />
             </div>
         </AnimationContainer>
     )

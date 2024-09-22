@@ -43,7 +43,7 @@ If you enjoy using caps.ai, consider supporting my work!
 [Buy Me a Coffee ☕](https://buymeacoffee.com/shreyas29)
 
 ## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Creative Commons Zero v1.0 Universal. See the [LICENSE](LICENSE) file for details.
 
 ---
 
